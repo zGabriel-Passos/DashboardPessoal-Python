@@ -4,7 +4,24 @@ import json
 
 data_json = "dados_rotina.json"
 
-st.write("## Dashboard Pessoal - Python")
+st.write(
+    '<img src="https://i.pinimg.com/236x/11/0f/59/110f59578288d703475e31c3b22ad66c.jpg" width="80" style="border-radius: 10px; margin: 5px 0px 5px 0px; border: 1px solid #fff" />',
+    unsafe_allow_html=True,
+)
+st.write(
+    '<span style="font-family: Arial; font-size: 34px; font-weight: 600;">Dashboard Pessoal - Python</span>',
+    unsafe_allow_html=True,
+)
+
+st.write(
+    '<span style="color: #8f8f8f; font-family: Lucida sans; font-size: 14px">@Gabriel</span><span style="font-size: 14px; padding-left: 5px;">Você consegue tudo com Deus.</span>',
+    unsafe_allow_html=True,
+)
+
+st.write(
+    '<span style="font-family: Lucida sans; font-size: 20px; font-weight: 600;">"Never give up on your dreams"</span>',
+    unsafe_allow_html=True,
+)
 
 try:
     with open(data_json, "r", encoding="utf-8") as arquivo_leitura:
@@ -55,3 +72,21 @@ if dados_existentes:
 
 else:
     st.write("Nenhuma tarefa adicionada ainda.")
+
+st.write(
+    '<hr style="width: 100%;height: 1px;border: 0px;border-top: 1px solid white;background-color: #fff;"><br>',
+    unsafe_allow_html=True,
+)
+st.write(
+    '<span style="font-family: Arial; font-size: 30px; font-weight: 600;">🎯 Visão de Agenda</span>',
+    unsafe_allow_html=True,
+)
+st.write("<br>", unsafe_allow_html=True)
+
+st.write(
+    "<span>Agenda:</span>",
+    unsafe_allow_html=True,
+)
+
+hora_selecionada = st.time_input("Selecione um horário")
+st.write("Horário selecionado:", hora_selecionada)
