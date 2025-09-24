@@ -61,9 +61,6 @@ with st.sidebar:
         with open(data_json, "w", encoding="utf-8") as arquivo:
             json.dump(dados_existentes, arquivo, indent=4, ensure_ascii=False)
 
-    if st.button("Board"):
-        st.switch_page("pages/board.py")
-
     if st.button("Limpar lista"):
         with open(data_json, "w", encoding="utf-8") as arquivo:
             json.dump([], arquivo, indent=4, ensure_ascii=False)
