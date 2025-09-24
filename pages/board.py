@@ -20,7 +20,6 @@ st.write(
     '<div style="display: flex; flex-direction: column;"><span style="font-family: Arial; font-size: 34px; font-weight: 600; display: flex; align-items: center; gap: 10px">Vision Board<span style="font-family: lucida sans;">- 2026</span></span></div>',
     unsafe_allow_html=True,
 )
-st.write("teste")
 
 
 st.write("<br>", unsafe_allow_html=True)
