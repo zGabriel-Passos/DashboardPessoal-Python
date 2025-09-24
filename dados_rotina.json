@@ -1,10 +1,26 @@
 [
     {
-        "tarefa": "Estudar Python",
-        "concluida": "Andamento"
+        "tarefa": "📘 Estudar Python",
+        "concluida": "Em andamento"
     },
     {
-        "tarefa": "Fazer meu portfolio",
+        "tarefa": "👱🏻‍♂️Fazer meu portfolio",
+        "concluida": "Não concluida"
+    },
+    {
+        "tarefa": "📝Terminando TCC",
+        "concluida": "Em andamento"
+    },
+    {
+        "tarefa": "🌐Melhorar sistema jpassos",
+        "concluida": "Não concluida"
+    },
+    {
+        "tarefa": "💹Terminar dashboard",
+        "concluida": "Concluida"
+    },
+    {
+        "tarefa": "📘 Lição da barbara",
         "concluida": "Não concluida"
     }
 ]

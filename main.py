@@ -2,6 +2,29 @@ import streamlit as st
 import pandas as pd
 import json
 
+st.markdown(
+    """
+    <style>
+    [data-testid="stHeader"] {
+        background-image: url("https://img.freepik.com/fotos-gratis/folhas-molhadas-de-monstera-deliciosa-em-um-jardim_53876-139814.jpg?semt=ais_hybrid&w=740&q=80");
+        opacity: 0.9;
+        background-size: cover;
+        background-position: center;
+        height: 70px;
+        border-bottom: 1px solid #fafafa5e;
+        background-repeat: no-repeat;
+    }
+
+
+    [data-testid="stSidebar"] {
+        background-color: #080a0e;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
 data_json = "dados_rotina.json"
 
 st.write(
@@ -9,17 +32,15 @@ st.write(
     unsafe_allow_html=True,
 )
 st.write(
-    '<span style="font-family: Arial; font-size: 34px; font-weight: 600;">- Dashboard Pessoal - Python</span>',
+    '<div style="display: flex; flex-direction: column;"><span style="font-family: Arial; font-size: 34px; font-weight: 600; display: flex; align-items: center; gap: 10px">LifeOS <span style="font-size: 10px; font-weight: normal; margin-top: 10px;">Feito com python.</span></span></div>',
     unsafe_allow_html=True,
 )
-
 st.write(
-    '<span style="color: #8f8f8f; font-family: Lucida sans; font-size: 14px">@Gabriel</span><span style="font-size: 14px; padding-left: 5px;">Você consegue tudo com Deus.</span>',
+    '<span style="color: #8f8f8f; font-family: Arial; font-size: 14px">@Gabriel</span><span style="font-size: 14px; padding-left: 5px; font-family: Arial;">Você consegue tudo com Deus.</span>',
     unsafe_allow_html=True,
 )
-
 st.write(
-    '<span style="font-family: Lucida sans; font-size: 20px; font-weight: 600;">"Never give up on your dreams"</span>',
+    '<span style="font-family: Lucida Sans; font-size: 20px; font-weight: 600;">"Never give up on your dreams...🍃"</span>',
     unsafe_allow_html=True,
 )
 
@@ -67,6 +88,7 @@ if dados_existentes:
     )
 
     selecionar = st.multiselect("Selecione para filtrar", df["concluida"].unique())
+    st.write("<br>", unsafe_allow_html=True)
     if selecionar:
         df = df[df["concluida"].isin(selecionar)]
         st.write(df)
